@@ -335,13 +335,26 @@ section { padding: 108px 0; }
 .contact-details svg { color: var(--red); flex-shrink: 0; }
 .contact-details a:hover { color: var(--white); }
 
-.whatsapp-link {
+.contact-offices { margin-bottom: 30px; }
+.offices-label {
+  display: block; font-family: var(--font-mono); font-size: 0.76rem;
+  letter-spacing: 0.04em; color: var(--text-dim-on-dark); text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.contact-offices ul { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line-on-dark); }
+.contact-offices li {
+  padding: 12px 0; border-bottom: 1px solid var(--line-on-dark);
+  font-size: 0.88rem; color: var(--text-dim-on-dark); line-height: 1.5;
+}
+.contact-offices li strong { color: var(--text-on-dark); font-weight: 600; }
+
+.contact-cta-link {
   display: inline-flex; align-items: center; gap: 10px; color: var(--text-on-dark); font-size: 0.9rem;
   border: 1px solid var(--line-on-dark); padding: 11px 20px; border-radius: 2px;
   transition: border-color 0.15s ease;
 }
-.whatsapp-link:hover { border-color: var(--text-on-dark); }
-.whatsapp-link svg { color: #3FBF6F; }
+.contact-cta-link:hover { border-color: var(--text-on-dark); }
+.contact-cta-link svg { color: var(--blue); }
 
 .contact-form {
   background: var(--paper); color: var(--text-on-paper);
