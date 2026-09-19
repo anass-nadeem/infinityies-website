@@ -359,7 +359,7 @@ section { padding: 108px 0; }
 .contact-form {
   background: var(--paper); color: var(--text-on-paper);
   border-radius: 3px; padding: 40px;
-  display: flex; flex-direction: column; gap: 20px;
+  display: flex; flex-direction: column; gap: 20px; /*color*/
   box-shadow: 0 40px 80px -30px rgba(0,0,0,0.5);
 }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
