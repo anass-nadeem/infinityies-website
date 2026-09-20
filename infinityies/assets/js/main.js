@@ -66,7 +66,7 @@ form?.addEventListener('submit', async (e) => {
     }
   } catch (err) {
     status.textContent =
-      "Couldn't send automatically — please email info@infinityies.com or use WhatsApp above.";
+      "Couldn't send automatically — please email info@infinityies.com";
     status.classList.add('is-error');
   } finally {
     submitBtn.disabled = false;
