@@ -336,6 +336,7 @@ section { padding: 108px 0; }
    Contact (dark, elevated paper form)
    ============================================================ */
 .contact-inner { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 64px; align-items: start; }
+.contact-inner > * { min-width: 0; }
 .contact-info h2 { color: var(--white); }
 .contact-details { list-style: none; padding: 0; margin: 26px 0 30px; display: flex; flex-direction: column; gap: 14px; }
 .contact-details li { display: flex; align-items: center; gap: 12px; color: var(--text-dim-on-dark); font-size: 0.95rem; font-family: var(--font-mono); }
@@ -369,9 +370,10 @@ section { padding: 108px 0; }
   display: flex; flex-direction: column; gap: 20px; /*color*/
   box-shadow: 0 40px 80px -30px rgba(0,0,0,0.5);
 }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.contact-form label { display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: var(--text-dim-on-paper); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; min-width: 0; }
+.contact-form label { display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: var(--text-dim-on-paper); min-width: 0; }
 .contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%; min-width: 0; box-sizing: border-box;
   background: var(--white); border: 1px solid var(--line-on-paper); border-radius: 2px; padding: 12px 14px;
   color: var(--text-on-paper); font-family: var(--font-body); font-size: 0.95rem; resize: vertical;
 }
